@@ -1,0 +1,25 @@
+.dashboardContainer {
+  min-height: 100vh;
+  margin: 25px;
+}
+
+.detailContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.leftDetailSection {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightDetailSection {
+  flex: 1;
+  height: 300px;
+
+}
