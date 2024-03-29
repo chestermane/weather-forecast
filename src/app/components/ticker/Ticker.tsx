@@ -14,7 +14,7 @@ function Ticker() {
           Tomorrow&apos;s Forecast - {period?.detailedForecast}
         </li>
         <li aria-hidden className={styles.ticketItem}>
-          Tomorrows Forecast {period?.detailedForecast}
+          Tomorrow&apos;s Forecast - {period?.detailedForecast}
         </li>
       </ul>
     </div>

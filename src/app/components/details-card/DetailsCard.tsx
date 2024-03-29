@@ -21,7 +21,6 @@ interface DetailsCardProps {
 
 function DetailsCard({ detailType }: DetailsCardProps) {
   const { period } = useContext(WeatherContext);
-  console.log("period: ", period);
 
   return (
     <Card className={styles.detailCard} hoverable>

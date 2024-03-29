@@ -11,14 +11,14 @@ function getNextDay(periods: ForecastPeriodData[]) {
 }
 
 function useForecast() {
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
+  const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, error } = useSWR(
     `https://api.weather.gov/gridpoints/AKQ/45,84/forecast`,
     fetcher,
     {
       refreshInterval: 600000,
-      revalidateOnMount: true,
+      revalidateOnFocus:false,
     }
   );
   const periods = data?.properties?.periods;
