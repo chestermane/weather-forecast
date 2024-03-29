@@ -1,0 +1,20 @@
+.weatherHeroContainer {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  background-image: url("../../assets/virginia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  border-radius: 10px !important;
+  height: 200px;
+  margin: 7px 9px;
+}
+
+.forecast,
+.date {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  gap: 5px;
+}
