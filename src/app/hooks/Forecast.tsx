@@ -2,7 +2,7 @@ import useSWR from "swr";
 import dayjs from "dayjs";
 
 function getNextDay(periods: ForecastPeriodData[]) {
-  const tomorrow = dayjs().add(1, "day").format("YYYY-03-DD");
+  const tomorrow = dayjs().add(1, "day").format("YYYY-MM-DD");
   const nextDayPeriod = periods?.find((period: ForecastPeriodData) => {
     return dayjs(period.startTime).format("YYYY-MM-DD") === tomorrow;
   });
@@ -23,6 +23,8 @@ function useForecast() {
   );
   const periods = data?.properties?.periods;
   const nextDayPeriod = getNextDay(periods) ?? null;
+  console.log('periods: ', periods);
+  console.log('nextDayPeriod: ', nextDayPeriod);
 
   return { nextDayPeriod, error };
 }

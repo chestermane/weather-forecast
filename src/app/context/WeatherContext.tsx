@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import useForecast from "../hooks/Forecast";
 
 type WeatherContextType = {
   period: ForecastPeriodData | null;
